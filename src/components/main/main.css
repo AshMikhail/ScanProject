@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "Ferry";
+    src: url('../../../fonts/ferry-black1.otf');
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "Inter";
+    src: url('../../../fonts/Inter-VariableFont_opsz\,wght.ttf');
+    font-style: normal; 
+    font-weight: normal; 
+}
+h1 {
+    font-family: Ferry;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 72px;
+    text-align: left;
+}
+h2 {
+    font-family: Ferry;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 54px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+h3 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+p {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+.main {
+    padding-top: 93px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    margin-bottom: 118px;
+}
+.service {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 60px 743px 577px 60px;
+    grid-template-rows: 1fr 0.3fr 0.3fr;
+    grid-template-areas: "e a d f" "e b d f" "e c d f";
+    justify-items: stretch;
+}
+.service_text_h1 {
+    grid-area: a;
+    width: 743px;
+    height: 288px;
+    margin-top: 30px;
+}
+.service_text_p {
+    grid-area: b;
+    width: 534px;
+    height: 48px;
+    margin-top: -40px;
+    padding: 0;
+}
+.main_img_1 {
+    grid-area: d;
+    padding: 0;
+    width: 629px;
+    height: 620px;
+}
+.search_form {
+    grid-area: c;
+}
+.search_button {
+    margin-top: -40px;
+    width: 335px;
+    height: 59px;
+    gap: 0px;
+    background: rgba(89, 112, 255, 1);
+    border-radius: 5px;
+    border: 0;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.63px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    cursor: pointer;
+}
+.why_us {
+    margin-left: 51px;
+    margin-right: 43px;
+    height: 350px;
+}
+.why_us_h2{
+    margin-left: 9px;    
+}
+.carusel {
+    display: flex;
+    width: 1346px;
+    height: 500px;
+    margin-left: -20px; 
+}
+.carusel_item {
+    display: flex;
+    width: 1340px;
+    height: 450px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    /* justify-content: center;
+    overflow-x: auto; */
+    overflow-y: hidden; 
+    scrollbar-width: none;
+}
+.carusel_element {
+    margin-top: 5px;
+    flex: 0 0 400px;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 225px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    margin-inline: 15px;
+    z-index: 1;
+}
+.carusel_image {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.carusel_p {
+    margin-inline: 20px;
+    margin-left: 24px;
+}
+.carusel_button {
+    background-color: white;
+    margin-top: 93px;
+    width: 39px;
+    height: 39px;
+    border: 0;
+    cursor: pointer;
+} 
+#button_right {
+    margin-left: -15px;
+}
+.button_image_left {
+    transform: scaleX(-1);
+}
+.main_img_2 {
+    width: 1307px;
+    height: 575.52px;
+    margin-left: 51px;
+    margin-top: 70px;
+}
+.tarifs {
+    margin-top: 107px;
+    margin-left: 60px;
+    margin-bottom: 5px;
+    width: 1320px;
+    height: 664px;
+    display:grid;
+    grid-template-rows: 54px 70px 1fr;
+    grid-template-areas: "a" "b" "c";
+}
+.tarifs_h2 {
+    grid-area: a;
+    margin: 0;
+    width: 743px;
+    height: 54px;
+}
+.tarif_cards {
+    grid-area: c;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 37px 1fr 37px 1fr;
+    grid-template-areas: "a d b e c";
+}
+.beginer {
+    grid-area: a;
+}
+.pro {
+    grid-area: b;
+}
+.business {
+    grid-area: c;
+}
+#card {
+    width: 415px;
+    height: 540px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+#tarif_name {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36.31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#tarif_text {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: -15px;
+    margin-left: 30px;
+}
+.tarif_img {
+    position: relative;
+    float: right;
+    right: 15px;
+    top: 11px;
+}
+.arrow_img {
+    position: relative;
+    transform: rotate(-3deg);
+    float: right;
+    right: 10px;
+    top: 0px;
+}
+.tarif_name {
+    margin: 0;
+    padding: 0;
+    height: 132px;
+    border-radius: 10px 10px 0 0;
+}
+#Beginer {
+    border: 1px solid rgba(255, 182, 79, 1);
+    background: rgba(255, 182, 79, 1);
+}
+#pro {
+    border: 1px solid rgba(124, 227, 225, 1);
+    background: rgba(124, 227, 225, 1);
+
+}
+#business {
+    border: 1px solid black;
+    background: black;
+    color: white;
+}
+.price_box {
+    display: flex;
+}
+.you_tarif {
+    float: right;
+    right: 0;
+    width: 134px;
+    height: 24px;
+    background: rgba(59, 165, 224, 1);
+    text-align: center;
+    border-radius: 10px;
+    padding: auto;
+    margin-left: 60px;
+    margin-top: 15px;
+    font-family: Inter;
+    font-size: 14px;
+}
+.old_price {
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30.26px;
+    letter-spacing: 0.01em;
+    color: gray;
+    text-align: left;
+    text-decoration-line: line-through;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.price_text {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-left: 30px;
+    margin-top: -20px;
+    
+}
+.price_text_pro {
+    display: none;
+}
+.in_tarif {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+ul {
+    margin-left: -40px;
+    margin-top: 5px;
+}
+li {
+    list-style-type: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+li::before {
+    content: '✓';
+    color: chartreuse;
+    margin-right: 5px;
+}
+.price_button_auth {
+    width: 355px;
+    height: 59px;
+    gap: 0px;
+    border-radius: 5px;
+    border: 0;
+    opacity: 0px;
+    margin-inline: 30px;
+    margin-top: 55px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: rgba(210, 210, 210, 1);
+}
+.price_button {
+    width: 355px;
+    height: 59px;
+    gap: 0px;
+    border-radius: 5px;
+    border: 0;
+    opacity: 0px;
+    margin-inline: 30px;
+    margin-top: 55px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: rgba(89, 112, 255, 1);
+    color: white;
+}
